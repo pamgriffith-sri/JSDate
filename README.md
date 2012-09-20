@@ -5,7 +5,7 @@ jsdate.js adds a format function to the javascript date object that works like P
 
 ###Using JSDate
 
-JSDate adds a `.format()` function on the Date object prototype. To use it, create a new `Date()` object, then call `.format()` on the date object with any combination of the implemented formats (any of the parameters on the [PHP manual page](http://php.net/manual/en/function.date.php) except those under Timezone) plus any other characters that you need.
+JSDate adds a `.format()` function on the Date object prototype. To use it, create a new `Date()` object, then call `.format()` on the date object with any combination of the implemented formats (any of the parameters on the [PHP manual page](http://php.net/manual/en/function.date.php) except "e", "I", and "T") plus any other characters that you need.
 
     var dateObj = new Date();
     var formattedDate = dateObj.format('F jS, Y'); // prints out as "January 11th, 2010"
